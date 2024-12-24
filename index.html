@@ -3,28 +3,79 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CSS selectors</title>
+    <style>
+        /*Element Selcetors*/
+        div{
+            background-color: orange;
+        }
+        /*class selector*/
+        greenyellow{
+
+        background-color:black;
+        }
+        /*id selector*/
+        #green{
+            background-color: aqua;
+
+        }
+        /* child selectors*/
+        div > p {
+            color: brown;
+            background-color: blueviolet;
+
+        }
+        /*descent selector*/
+        div p {
+            color: brown;
+            background-color: blueviolet;
+        }
+         /*universal selector*/
+        *{
+            margin: 0;
+            padding:0;
+        }
+        /*pseudo selectors*/
+        a:visited{
+            color:rgb(168, 0, 126);
+        }
+        a:linked{
+            color:aqua;
+        }
+        a:active{
+             color:rgb(87, 97, 0);
+        }
+        a:hover{
+            background-color: blanchedalmond;
+        }
+        p:first-child{
+            background-color: chocolate;
+        }
+        p:second-child{
+            background-color: aquamarine;
+        }
+
+
+    </style>
 </head>
 <body>
-    <h1>WELCOME  To The css</h1>
-    <h2>VIDEO FOR THE DAY </h2>
-    <div>
-        <video  src="video1.mp4" controls></video>
-        <video   src="video2.mp4" controls></video>
-        <video  src="video3.mp4" controls></video>
-        <video   src="video4.mp4" controls></video>
-        <video   src="video5.mp4" controls></video>
+    <div style="color: greenyellow;">
+        I am div 
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint explicabo accusamus ad repudiandae asperiores ea similique illum quibusdam debitis adipisci!</p>
     </div>
-    <h2>
-        AUDIO FOR THE DAY 
-    </h2>
-        <div>
-            <audio src="audio1.mp3" controls></audio>
-            <audio src="audio2.mp3" controls></audio>
-            <audio src="audio3.mp3" controls></audio>
-            <audio src="audio4.mp3" controls></audio>
-            <audio src="audio5.mp3" controls></audio>
-        </div>
-</body>
+    <div>
+        I am a another div 
+    </div>
+    <div id="green">
+        I am part of class
 
+    </div>
+    <div class="start">
+        <p>First Child</p>
+        <p>Second Child</p>
+    </div>
+    <a href="https://www.google.com">Go To Google</a>
+    <a href="https://www.Facebook.com">Go To Facebook</a>
+    
+</body>
 </html>
