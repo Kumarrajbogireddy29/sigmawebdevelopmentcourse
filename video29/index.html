@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Css Variables</title>
+    <style>
+        :root{
+            --color:purple;
+            --seccolor:blue;
+            --defpad:23px;
+            --defop:0.2;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+
+        }
+        .nav{
+            background-color: rgb(10, 253, 253);
+        }
+        .container{
+
+            background-color: orange;
+        }
+        ul{
+            display: flex;
+            opacity: var(--defop);
+        }
+        ul li:first-child{
+            background-color: rgb(149, 77, 77);
+            --color:purple;
+            list-style-type:none;
+            padding: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav">
+        <ul>
+            <li> Home  </li>
+            <li> About </li>
+            <li> Contact </li>
+        </ul>
+    </div>
+
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quo repudiandae nulla id! Eius, aspernatur tempora. Fugit veniam quidem odio fugiat magnam facilis molestias. Modi cum quod ea, error sint quas cupiditate sit ipsam nam laudantium earum sed rerum, nostrum nemo mollitia vero voluptatibus facere!
+    </div>
+    
+</body>
+</html>
