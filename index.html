@@ -3,28 +3,40 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Css Media Queries</title>
     <style>
-        div:first-child
-        p:first-child{
-            background-color: yellow;
-            color: red;
+        body{
+            background-color: burlywood;
         }
-div>p{
-    background-color: blue;
-    color: white;
-}
-</style
+        @media only  screen  and (max-width:455px){
+            body{
+                background-color: blueviolet;
+            }
+        }
+        .box{
+            width: 344px;
+            height: 344px;
+            background-color: steelblue;
+            padding: 3px;
+            margin: 3px;
+      }
+      .boxes{
+        flex-direction: column;
+      }
+
+    </style>
 </head>
 <body>
     <div>
-        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quibusdam, temporibus officia. Rem numquam mollitia accusamus voluptatem illum, adipisci tempora quo doloribus magnam labore.</p>
-        <p>I am another paragraph </p>
-        <p>That is the another paragraph of another one </p>
+        Hey! I am sandy guy
     </div>
-    <div>
-    <p>this is paragraph</p>
-    <p>another one</p>
+    <div class="boxes">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
+
+    
 </body>
 </html>
