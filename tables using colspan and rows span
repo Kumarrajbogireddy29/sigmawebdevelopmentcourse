@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<style>
+  table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+<body>
+  <table style="width: 70%;">
+    
+    <tbody>
+      <tr>
+        <td colspan="2">     column         </td>
+        
+        <td colspan="2">      column        </td>
+         
+
+              </tr>
+              <tr>
+        <td colspan="2">      column        </td>
+        
+        <td colspan="2">      column        </td>
+        
+
+              </tr>
+              <tr>
+        <td> col </td>
+        <td colspan="2">      column         </td>
+        
+        <td>  col  </td>
+
+              </tr>
+              <tr>
+        <td>  col  </td>
+        <td colspan="2">     column        </td>
+        
+        <td>  col  </td>
+
+              </tr>
+        <tr>
+        <td rowspan="2">  row  </td>
+        <td rowspan="2">  row  </td>
+        <td colspan="2">     column         </td>
+        
+        </tr>
+
+        <tr>
+                
+        <td colspan="2">     column         </td>
+        
+        </tr>
+
+
+
+    </tbody>
+  </table>
+
+</body>
+</html>
