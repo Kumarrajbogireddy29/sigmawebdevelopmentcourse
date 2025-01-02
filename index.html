@@ -3,51 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS selectors</title>
+    <title>CSS Float and Clear</title>
     <style>
-        *{
-            margin: 0;
-            padding: 0;
-
+        .cards{
+            border: 2px solid black;
+            display: flow-root;
         }
-        .boxes *{
-            color:blue;
-            border:2px;
-
+        img{
+            float: left;
         }
-        .box::first-line{
-            color: aqua;
+        .card{
+            border: 2px solid red;
         }
-       div,p [data-color="primary"]{
-            padding-top: 45px;
-            margin:2px;
-        }
-        .box:nth-child(odd){
-            background-color:coral;
-        }
-        .box:nth-last-child(2){
-            color: blanchedalmond;
-        }
-        .boxes::before{
-            content:"Kumar is good";
-        }
-        .box::first-letter{
-            color: black;
-            font-size: 40px;
-        }
-        input::placeholder{
-            color: blue;
-            font-size: 20px;
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: both;
         }
     </style>
 </head>
 <body>
-    <div  [data-color= "primary"] class="boxes">
-        <div class="box">Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic perspiciatis quidem omnis ut neque nobis ex rem quasi facilis, culpa aliquid? Non ipsum debitis maxime possimus, veritatis doloribus provident? Fugit ut sit ratione laboriosam soluta alias, exercitationem repellat aspernatur cumque facilis earum quod, ullam numquam vero et esse molestiae amet. Consequuntur consectetur fuga a exercitationem incidunt dolores impedit. Explicabo, quidem obcaecati delectus consequuntur ad eaque? Quia est ipsam doloribus facere, beatae ullam consequuntur similique. Veritatis tempora, vero consequatur, enim neque voluptatem optio fuga, molestias unde asperiores sunt est eos fugit magnam saepe maxime reprehenderit eius. Velit voluptas tenetur nam quas id esse maxime impedit consequatur dolore, debitis inventore illum? Accusamus, aliquid. Sed fugiat quis, laborum natus iusto dolor impedit illo optio ea sint obcaecati ipsam perspiciatis porro, soluta eos at voluptatem dolorem quod necessitatibus ab aspernatur nulla. Obcaecati perferendis quas aut nulla et dolor eveniet delectus hic? Obcaecati laboriosam voluptatum at sed dolorum optio harum modi possimus perferendis sapiente numquam, minus expedita iure id voluptates voluptatem consequatur cum, sit quasi exercitationem aperiam nihil. Unde mollitia quam, hic quis at officiis perspiciatis cum voluptas non enim magni nulla reiciendis fugiat sunt deleniti dolores eos fugit adipisci explicabo ipsum corrupti! Sit ipsa deleniti repellat vitae voluptates accusamus. Officiis et ipsam, corrupti doloremque ipsa provident eaque incidunt, impedit laborum nesciunt quibusdam voluptas, magni quos sit natus animi temporibus ab alias? Sed praesentium odit molestias molestiae vitae minus veritatis temporibus vel tempora iusto illum earum omnis minima quo voluptatem, quos id ipsa quidem error, pariatur iste! Minima quas quis eius sit, fugiat nobis voluptatum nisi, non, dolores debitis aliquid quasi placeat ipsa ut sunt. Perferendis, ab dolorem consequuntur suscipit voluptates iusto beatae reiciendis accusamus aperiam itaque reprehenderit, laboriosam non recusandae, enim facere in! Quo ab amet tenetur id aliquid molestias laborum quibusdam doloribus iusto tempore nam distinctio nobis quod aperiam, culpa architecto quidem illum, esse inventore rerum iure molestiae fugit sit? Aliquam unde suscipit, sapiente nemo quia quo odit ab consectetur magni debitis maxime totam odio ad beatae sequi laborum praesentium facere ea magnam. Nostrum optio corrupti obcaecati! Adipisci, fugiat. Expedita nemo labore at ratione ducimus? Dolorum doloribus possimus officiis tempora! Temporibus sequi voluptates totam quas quos repudiandae labore sit assumenda ratione quibusdam amet modi, eligendi accusamus dolores ullam reiciendis? Reiciendis dignissimos, in ullam similique saepe magni vero, minus temporibus aspernatur unde voluptatem vel! Consequatur aliquid ipsam natus sunt voluptatum exercitationem labore harum porro nesciunt, quisquam adipisci officia alias in nihil recusandae at, veniam, fuga sit. Animi nisi repudiandae minima dignissimos fugiat, assumenda facilis ratione velit architecto, neque debitis quis amet tempore recusandae soluta reiciendis ullam. Ex quam odio sequi doloribus quasi voluptatum labore voluptatibus accusamus temporibus, veniam magnam sit possimus alias quod voluptates itaque pariatur tempora quis provident.</div>
-        <div class="box">Hey I an box</div>
-        <div class="box">Hey I an box</div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa cumque obcaecati eum ab quas nisi aperiam exercitationem itaque ullam ad, quo, earum facere?</p>
-        <input type="text" placeholder="Enter your name here">
+    <div class="cards">
+        <img src="images.jpeg" alt="Nature Feels" srcset="" width="230">
+        <div class="card">
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quod totam iusto tenetur autem, perspiciatis eligendi debitis neque excepturi animi cum, nihil enim.</p>
+        </div>
+        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla enim sit quasi unde corrupti explicabo quas officiis tempora corporis in eius atque voluptas incidunt nostrum sed quo, doloribus laudantium iusto rerum debitis? Nam vitae optio soluta reiciendis culpa deleniti, fugit libero enim doloribus, iure est ab explicabo facere pariatur. Minima, deleniti. Quam tempore suscipit commodi nam perspiciatis, quia rem sapiente sequi nulla. Magnam laborum delectus, reiciendis exercitationem quibusdam fuga molestiae vitae laudantium repellendus assumenda nemo tenetur accusamus esse vero, iure quasi in. Assumenda nesciunt tenetur quidem et id! Pariatur beatae corrupti dicta. Facilis fugit odio quae, voluptatibus earum culpa aliquam tempora autem illo. Vel natus reiciendis obcaecati sunt ipsum fugit quidem fugiat dolorum, minima eaque perferendis, iure provident voluptatibus, aspernatur quia quaerat veniam? Dignissimos, commodi ut amet saepe eligendi maiores hic enim placeat sint doloremque, reprehenderit voluptatibus necessitatibus, a ex? Inventore, facere at voluptas possimus iusto harum ex quae asperiores modi atque vitae repellat deserunt minima magnam ipsum reprehenderit corrupti delectus labore. Sit sequi impedit tenetur minus. Ratione accusamus dolorum est, tempore doloremque sunt quo consequuntur fugit tempora exercitationem vero blanditiis ipsa laudantium voluptatem. Recusandae expedita ullam ipsam unde repudiandae perspiciatis eum est officiis, amet, ex odio reiciendis error assumenda optio quidem quos distinctio ad voluptates, obcaecati aliquam rem vitae similique corporis autem? Magnam, suscipit. Praesentium, quo! Ad tenetur rem, aspernatur voluptates, dolores quo assumenda voluptas dicta mollitia quasi pariatur culpa molestiae placeat magnam! Tenetur veritatis laborum exercitationem eum alias dolore voluptatibus beatae similique commodi nihil, reiciendis odio odit quae illum, quaerat quam magni dicta? Ab ducimus molestias ex expedita, deserunt aliquam delectus quam odit quasi quo quibusdam natus, eum officia quas, nemo quaerat consequuntur adipisci sit aliquid iste minus. Delectus totam consequuntur vel ea porro commodi quam natus, ut aspernatur libero quidem ducimus voluptas, ipsa neque assumenda corrupti illum itaque quod. Veniam distinctio, saepe reiciendis culpa iusto vero ipsa enim reprehenderit adipisci facere odio aliquid sit deserunt quasi recusandae doloremque nihil cupiditate repellendus ratione esse. Iusto nihil eligendi animi fugit impedit.</div>
+        <div class="card">Card3</div>
     </div>
     
 </body>
