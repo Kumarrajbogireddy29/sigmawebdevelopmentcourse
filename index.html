@@ -3,33 +3,34 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS Float and Clear</title>
+    <title>Css Flex Box</title>
     <style>
-        .cards{
-            border: 2px solid black;
-            display: flow-root;
-        }
-        img{
-            float: left;
-        }
-        .card{
+        .container{
             border: 2px solid red;
+            display: flex;
+            justify-content: center;
+            height: 100vh;
         }
-        .card:nth-child(3){
-            background-color: aqua;
-            clear: both;
+        .item{
+            height: 32px;
+            width: 32px;
+            border: 2px solid black;
+            margin: 4px;
+            background-color:violet;
         }
+
     </style>
 </head>
 <body>
-    <div class="cards">
-        <img src="images.jpeg" alt="Nature Feels" srcset="" width="230">
-        <div class="card">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde quod totam iusto tenetur autem, perspiciatis eligendi debitis neque excepturi animi cum, nihil enim.</p>
+    <main>
+        <div class="container">
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
+            <div class="item"></div>
         </div>
-        <div class="card">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ad nulla enim sit quasi unde corrupti explicabo quas officiis tempora corporis in eius atque voluptas incidunt nostrum sed quo, doloribus laudantium iusto rerum debitis? Nam vitae optio soluta reiciendis culpa deleniti, fugit libero enim doloribus, iure est ab explicabo facere pariatur. Minima, deleniti. Quam tempore suscipit commodi nam perspiciatis, quia rem sapiente sequi nulla. Magnam laborum delectus, reiciendis exercitationem quibusdam fuga molestiae vitae laudantium repellendus assumenda nemo tenetur accusamus esse vero, iure quasi in. Assumenda nesciunt tenetur quidem et id! Pariatur beatae corrupti dicta. Facilis fugit odio quae, voluptatibus earum culpa aliquam tempora autem illo. Vel natus reiciendis obcaecati sunt ipsum fugit quidem fugiat dolorum, minima eaque perferendis, iure provident voluptatibus, aspernatur quia quaerat veniam? Dignissimos, commodi ut amet saepe eligendi maiores hic enim placeat sint doloremque, reprehenderit voluptatibus necessitatibus, a ex? Inventore, facere at voluptas possimus iusto harum ex quae asperiores modi atque vitae repellat deserunt minima magnam ipsum reprehenderit corrupti delectus labore. Sit sequi impedit tenetur minus. Ratione accusamus dolorum est, tempore doloremque sunt quo consequuntur fugit tempora exercitationem vero blanditiis ipsa laudantium voluptatem. Recusandae expedita ullam ipsam unde repudiandae perspiciatis eum est officiis, amet, ex odio reiciendis error assumenda optio quidem quos distinctio ad voluptates, obcaecati aliquam rem vitae similique corporis autem? Magnam, suscipit. Praesentium, quo! Ad tenetur rem, aspernatur voluptates, dolores quo assumenda voluptas dicta mollitia quasi pariatur culpa molestiae placeat magnam! Tenetur veritatis laborum exercitationem eum alias dolore voluptatibus beatae similique commodi nihil, reiciendis odio odit quae illum, quaerat quam magni dicta? Ab ducimus molestias ex expedita, deserunt aliquam delectus quam odit quasi quo quibusdam natus, eum officia quas, nemo quaerat consequuntur adipisci sit aliquid iste minus. Delectus totam consequuntur vel ea porro commodi quam natus, ut aspernatur libero quidem ducimus voluptas, ipsa neque assumenda corrupti illum itaque quod. Veniam distinctio, saepe reiciendis culpa iusto vero ipsa enim reprehenderit adipisci facere odio aliquid sit deserunt quasi recusandae doloremque nihil cupiditate repellendus ratione esse. Iusto nihil eligendi animi fugit impedit.</div>
-        <div class="card">Card3</div>
-    </div>
+    </main>
     
 </body>
 </html>
