@@ -3,32 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Css Animations</title>
+    <title>Document</title>
     <style>
-        .container{
-            background-color: rosybrown;
-            height: 80vwh;
-            width:30vw;       
-         }
-        .box{
-            color: aqua;
-            width: auto;
-            height: 50px;
-            animation-timing-function:cubic-bezier(0.075, 0.82, 0.165, 1);
-            animation-duration: 3s;
-            animation-iteration-count: infinite;
-            animation-delay: 1s;
-            animation-direction: reverse;
-            animation-play-state: paused;
+        .logo img{
+            width: 164px;
+          }
 
+        nav{
+            display: flex;
+            justify-content: space-around;
+            align-items:center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .right ul {
+            display: flex;
+            gap: 34px;
+            align-items: center;
+        }
+        .right ul li{
+            padding: 0 5px;
         }
 
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="Box">Box</div>
-    </div>
+    <header>
+        <nav>
+            <div class="logo"><img src="//www.ultraedit.com/wp-content/uploads/2023/01/Dark-logo.png"></div>
+            <div class="right">
+                <ul>
+                    <li><span>Products</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Pricing</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>Resources</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li><span>About</span><svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L11.2929 14.2929C11.6262 14.6262 11.7929 14.7929 12 14.7929C12.2071 14.7929 12.3738 14.6262 12.7071 14.2929L18 9" stroke="#141B34" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg></li>
+                    <li> <img src="https://www.ultraedit.com/wp-content/themes/Divi_Child/img/Lang.png"></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
     
 </body>
 </html>
