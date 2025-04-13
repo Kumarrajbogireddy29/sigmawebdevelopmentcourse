@@ -1,43 +1,51 @@
-body {
-        background:linear-gradient(45deg,blueviolet,deeppink);
-      }
 .registration-div{
-    font-family: Arial, Helvetica, sans-serif;
-    background: linear-gradient(45deg,deeppink,blueviolet);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background:linear-gradient(45deg,blueviolet,deeppink);
     width: 300px;
+    padding: 15px;
     color: aliceblue;
-    margin:50px auto;
-    padding: 20px;
-    box-shadow: 0 5px 10px black;
-    border-radius: 10px;
-
-
+    margin: 50px auto;
 }
+
 .registration-div h2{
-    font-size: 30px;
     text-align: center;
-    margin: 10px;
-}
-.form-group label{
-    display: block;
-    margin: 10px 0;
+    font-size: 25px;
 }
 .form-control{
-    font-size: 18px;
-    height: 35px;
-    border: none;
+    font-size: 19px;
+    height: 30px;
     width: 290px;
-    border-radius: 10px;
-}
-.submit-class{
-    margin: 15px 0;
-    background: linear-gradient(45deg,blueviolet,deeppink);
-    color:aliceblue; 
-    font-size: 20px;
-    padding:12px 5px;
-    width: 290px;
+    margin: 7px;
     border: none;
-    box-shadow:  0 5px  10px black;
-                  
+    outline: none;
+    background: transparent;
+    color: aliceblue;
+    border-bottom: 3px solid #ec89b9;
 
+}
+::placeholder{
+    color: aliceblue;
+}
+.form-control option{
+    color: #ec89b9;
+
+}
+.register-btn{
+    background:linear-gradient(45deg,blueviolet,deeppink);
+    color: white;
+    font-size: 18px;
+    padding: 10px 25px;
+    width: 290px;
+    box-shadow: 0 5px 5px black;
+    margin: 5px;
+    border: none;
+    outline: none;
+
+}
+.register-btn:hover{
+    color: black;
+
+}
+.form-control:hover{
+    color: black;
 }
