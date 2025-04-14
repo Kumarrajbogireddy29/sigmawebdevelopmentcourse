@@ -1,19 +1,28 @@
-alert("Hello World!");
-console.log("Hey,I am running")
-console.log("Hey,I am  also running")
-console.log("Hey,I also  running please")
+console.log("hey! tutorial  of 2")
 
-var a = prompt("Enter your number")
-var isTrue = confirm("Are you sure you want your computer to blast")
-if(isTrue){
-    console.log("Computer is blasting")
+var a=10;
+var b=43;
+var c= "kumar"
+console.log(a+b)
+console.log(a+b+87)
+console.log(typeof a,typeof b,typeof c)
 
+let x= "Raj";
+let y= 22;
+let z=3.55;
+const p=true;
+let q=undefined;
+let r = null;
+console.log(x,y,z,p,q,r)
+console.log(typeof x,typeof y,typeof z,typeof p,typeof q,typeof r)
+
+let o ={
+    name:"Kumar Raj",
+    "job code " :"1776109",
+    "is_handsome" :true
 }
-else{
-    console.log("computer is not blasting")
-}
-console.log("your number is "+a)
-
-document.title = "Hey I am good"
-
-document.body.style.backgroundColor = "red"
+console.log(o);
+o.office = "Deloitee";
+console.log(o);
+o.office="Google"
+console.log(o);
