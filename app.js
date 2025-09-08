@@ -1,84 +1,46 @@
-class Person{
-    constructor(firstName,lastName){
-        this.firstName = firstName;
-        this.lastName = lastName;
+/*let mobile ={
+    brand: "Apple",
+    color : "White",
+    model:"iphone 16"
+
+};
+console.log(mobile);
+*/
+
+class Mobile{
+    constructor(brand,color,price){
+        this.brand = brand;
+        this.color = color;
+        this.price = price;
 
     }
-    getFirstName(){
-        return this.firstName;
+    getBrand(){
+        return this.brand;
     }
-    getLastName(){
-        return this.lastName;
+    setBrand(brand){
+        this.brand= brand;
     }
-    greet(){
-        let msg = `Welcome  Mr/Ms :${this.getFirstName()} ${this.getLastName()}`;
-        console.log(msg);
+    getcolor(){
+        return this.color;  
     }
-}
-
-class Employee extends Person{
-    constructor(firstName,lastName,age,designation){
-        super(firstName,lastName);
-        this.age = age;
-        this.designation = designation;
-
+    setcolor(color){
+        this.color = color;
     }
-    getAge(){
-        return this.age;
+    getprice() {
+        return this.price;
     }
-    getDesignation(){
-        return this.designation;
+    setprice(price){
+        this.price = price;
     }
-    greet(){
-        let msg = `Welcome  Mr/Ms :${this.getFirstName()} ${this.getLastName()},Age:${this.getAge()},Designation:${this.getDesignation()}`;
-        console.log(msg);
-    }
-
-}
-let employee =new Employee("John","Doe",30,"Developer");
-Employee.greet();
- 
-class customer extends Person{
-    constructor(firstName,lastName,age, location){
-        super(firstName,lastName);
-        this.age = age;
-        this.location= location;
-    }
-    getAge(){
-        return this.age;
-    }
-    getLocation(){
-        return this.location;
+    printSpecification(){
+        let spec = `Brand: ${this.brand}, Color: ${this.color}, Price: ${this.price}`;
+        console.log(spec);
+        
     }
 }
-let customer = new customer("Jane","Smith",28,"New York");
-customer.greet();
 
-
-
-
-
-
-class Car {
-constructor(brand) {
-    this.carname = brand;
-  }
-present() {
-    return 'I have a ' + this.carname;
-  }
-}
-
-class Model extends Car {
-  constructor(brand, mod) {
-    super(brand);
-    this.model = mod;
-  }
-show() {
-    return this.present() + ', it is a ' + this.model;
-  }
-}
-
-let myCar = new Model("Ford", "Mustang");
-document.getElementById("demo").innerHTML = myCar.show();
-
-// Expected Output: I have a Ford, it is a Mustang
+let mobile = new Mobile('Apple', 'white', 90000);
+mobile.printSpecification();
+mobile.setprice(85000);
+mobile.setcolor('red');
+mobile.printSpecification();
