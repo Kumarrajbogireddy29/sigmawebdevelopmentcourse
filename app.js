@@ -1,46 +1,10 @@
-/*let mobile ={
-    brand: "Apple",
-    color : "White",
-    model:"iphone 16"
+import {Employee} from '../Employee/app.js';
+import {customer} from '../Customers/app.js';
+let employee =new Employee("John","Doe",30,"Developer");
+employee.greet();
 
-};
-console.log(mobile);
-*/
+let customer = new customer("Jane","Smith",28,"New York");
+customer.greet();
 
-class Mobile{
-    constructor(brand,color,price){
-        this.brand = brand;
-        this.color = color;
-        this.price = price;
 
-    }
-    getBrand(){
-        return this.brand;
-    }
-    setBrand(brand){
-        this.brand= brand;
-    }
-    getcolor(){
-        return this.color;  
-    }
-    setcolor(color){
-        this.color = color;
-    }
-    getprice() {
-        return this.price;
-    }
-    setprice(price){
-        this.price = price;
-    }
-    printSpecification(){
-        let spec = `Brand: ${this.brand}, Color: ${this.color}, Price: ${this.price}`;
-        console.log(spec);
-        
-    }
-}
-
-let mobile = new Mobile('Apple', 'white', 90000);
-mobile.printSpecification();
-mobile.setprice(85000);
-mobile.setcolor('red');
-mobile.printSpecification();
+/* by using import and export we can use the classes in different files and modules */
