@@ -1,10 +1,17 @@
-import {Employee} from '../Employee/app.js';
-import {customer} from '../Customers/app.js';
-let employee =new Employee("John","Doe",30,"Developer");
-employee.greet();
+count = 0;
+interval = 0;
+let greet = () => {
+    count++;
+    console.log(`Hello, World!:${count}`);
+    console.log(new Date().toLocaleDateString());
+}
+interval = setInterval(greet, 1000); //milliseconds
 
-let customer = new customer("Jane","Smith",28,"New York");
-customer.greet();
+// setinterval used to stop after calling certain interval of time
 
+console.log(new Date().toLocaleTimeString());
 
-/* by using import and export we can use the classes in different files and modules */
+setTimeout(() =>{
+    console.log("Goodbye, World!");
+    clearInterval(interval);
+}, 5000); //milliseconds                                         
